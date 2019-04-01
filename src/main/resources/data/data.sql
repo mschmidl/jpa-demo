@@ -1,3 +1,3 @@
-INSERT INTO Person(name, role) values ('Christian Huber', 'admin');
-INSERT INTO Person(name, role) values ('Markus Maier', 'dev');
-INSERT INTO Person(name, role) values ('Stefan Leitner', 'dev');
+INSERT INTO Person(name, role, active) values ('Christian Huber', 'admin', true);
+INSERT INTO Person(name, role, active) values ('Markus Maier', 'dev', true);
+INSERT INTO Person(name, role, active) values ('Stefan Leitner', 'dev', true);
