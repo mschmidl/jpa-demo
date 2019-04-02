@@ -25,7 +25,7 @@ public class PersonController {
         return personService.findById(id);
     }
 
-    @GetMapping(value = "/", params = "role")
+    @GetMapping(value = "", params = "role")
     public List<Person> personByRole(@RequestParam String role) {
         return personService.findByRole(role);
     }

@@ -15,7 +15,7 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
 
     List<Person> findByRole(String role);
 
-    @Query("SELECT f FROM Person f WHERE lower(f.name) = lower(:role)")
+    @Query("SELECT f FROM Person f WHERE lower(f.role) = lower(:role)")
     List<Person> findByNameCaseInsensitive(@Param("role") String role);
 
 
